@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="tabla.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <style>
+
+		body{
+			background-color:lightslategrey;
+			/*background-image: url(/essilor1.jpg);*/
+			background-size: auto;
+    		background-repeat: no-repeat;
+		}
+		.subcontent1{
+			background-color: black;
+			height: 500px;
+		}
+		.row{
+			display: flex;
+			justify-content: space-between;
+			font-size: large;
+		}
+		.column{
+			flex: 1;
+			padding: 3px;
+			margin: 0.7%;
+			width: 1%;
+			text-align: center;
+			background-color: white;
+			border-radius: 10px;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		.row1{
+			background-color: black;
+			height: 87px;
+			width: auto;
+			right: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.header{
+			background-color: black;
+			justify-content: center;
+			text-align: center;
+			border-radius: 10px;
+		}
+		.content1{
+			background-color: bisque;
+		}
+		.title{
+			color: white;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			font-size: 40px;
+  		}
+		.navbar{
+    		background-color: black;
+    		justify-content: center;
+  		}
+    </style>
+</head>
+
+<body>
+	<div class="navbar"><h1 class="title">Essilor Luxottica Statistics & Analytics</h1></div>
+    <div class="container">
+		<div class="content2">
+			<div class="row">
+				<div class="column">
+					<h3>Accidents</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Turnover (%)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Absenteeism (%)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Volume</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Service D+2</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Total Lab Service</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="column">
+					<h3>Tail D+5</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>InterLabs Rejects (DVI)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>InterLabs Rejects (Optifacts)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>InterLabs Rejects (Total)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="column">
+					<h3>Short Orders</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Manufacturing Unit Cost (USD)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Unit Cost Finishing (USD)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Breakage HMC</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Breakage E&M</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="column">
+					<h3>Optics: %NC Full ANSI</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>First Pass Yield Surfacing</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>First Pass Yield HC</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>First Pass Yield AR</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>First Pass Yield Finishing</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="column">
+					<h3>Lead Time Hrs (95%)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>WIP (Days above Target)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>NLH's</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Avg # Sets/AR machine/day</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Avg # lenses/set/ AR machine</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+			</div>
+            <div class="row">
+				<div class="column">
+					<h3>Energy (KWH/lens)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column">
+					<h3>Water (L/lens)</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

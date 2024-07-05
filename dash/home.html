@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELSA</title>
+    <style>
+
+		body{
+			background-color:lightslategrey;
+			/*background-image: url(/essilor1.jpg);*/
+			background-size: auto;
+    		background-repeat: no-repeat;
+		}
+		#titulo{
+			text-align: center;
+			color: white;
+		}
+		#div1{
+			background-color: beige;
+		}
+		.row{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#left-nav{
+			height: 500px;
+			width: 600px;
+		}
+
+		.sidebar {
+            height: 100%;
+            width: auto;
+            top: 0;
+            left: 0;
+			position: fixed;
+            background-color:white;
+            overflow-x: hidden;
+            padding-top: 5px;
+        }
+
+        .sidebar a {
+            padding: 15px 15px;
+            text-decoration: none;
+            font-size: 20px;
+			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: lightblue;
+        }
+
+        /* Estilos para el contenido principal */
+		.content {
+            margin-left: 196px;
+            padding: 5px 5px;
+			text-align: center;
+			justify-content:center ;
+			margin-top: 3%;
+			margin-bottom: auto;
+
+        }
+		.subcontent1{
+			background-color: black;
+			height: 500px;
+		}
+		.row{
+			display: flex;
+			justify-content: space-between;
+			font-size: large;
+			margin-left: 10px;
+		}
+		.column{
+			flex: 1;
+			padding: 0px;
+			margin: 1.5%;
+			text-align: center;
+			background-color: white;
+			border-radius: 10px;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		.navbar{
+			background-color: black;
+			height: 80px;
+			width: auto;
+			right: 0;
+		}
+		.row1{
+			background-color: rgb(97, 26, 26);
+			height: 87px;
+			width: auto;
+			margin-left: 50px;
+			right: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.logo{
+			width: 58%;
+			height: 58%;
+			border-radius: 20px;
+		}
+		.container{
+			justify-content: center;
+			flex-direction: center;
+		}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+		<div class="wrapper">
+			<div class="sidebar">
+				<img src="essilor2.jpg" width="200px" height="100px">
+				<br><br>
+				<a href="#">PDCA</a>
+				<a href="/about">Statistics & Analytics</a>
+			</div>
+	
+			<div class="content">
+				<div class="row">
+					<div class="column">
+						<h3>Surfacing</h3>
+						<a href="/surf">
+							<img class="logo" src="surfacing.jpg">
+						</a>
+					</div>
+					<div class="column">
+						<h3>Coating</h3>
+						<a href="/coat">
+							<img class="logo" src="coating.jpg">
+						</a>
+					</div>
+					<div class="column">
+						<h3>Edging</h3>
+						<a href="/edging">
+							<img class="logo" src="edging.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<h3>Warehouse</h3>
+						<a href="/inventory">
+							<img class="logo" src="inventory.png">
+						</a>
+					</div>
+					<div class="column">
+						<h3>Maintenance</h3>
+						<a href="/finishing">
+							<img class="logo" src="finishing.jpg">
+						</a>
+					</div>
+					<div class="column">
+						<h3>Quality</h3>
+						<a href="/quality">
+							<img class="logo" src="quality.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

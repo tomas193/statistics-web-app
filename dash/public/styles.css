@@ -1,0 +1,206 @@
+body{
+  background-color: lightslategray;
+}
+.contenedor{
+  background-color: aliceblue;
+  border-radius: 10px;
+  width: 101%;
+}
+.contenedor2{
+  border-radius: 10px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.title{
+  color: white;
+}
+.main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh; 
+  flex-direction: column;
+}
+.navbar{
+background-color: black;
+text-align: center;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 84%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 100;
+}
+.row{
+display: flex;
+justify-content: space-between;
+height: auto;
+width: auto;
+}
+.column{
+display: flex;
+margin: 10px;
+width: 33%;
+height: auto;
+text-align: center;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 90%;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+}
+.column1{
+    flex: 1;
+    padding: 3px;
+    margin: 0.7%;
+    width: 1%;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#home{
+  justify-content: left;
+  }
+#home h3{
+  color: white;
+  margin-left: 3vw;
+}
+.triangle1 { /*triangulo principal*/
+    width: 0;
+    height: 0;
+    border-left: 12vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 12vw solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 51vh solid rgb(255,255,255);
+}
+.triangle2 {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 5.5vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 5.5vw solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 17.1vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+}
+.triangle2 table{
+    margin-top: 8vh;
+    margin-left: -1.2vw;
+}
+.triangle3 {
+    width: 0;
+    height: 0;
+    border-left: 5.5vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 5.5vw solid transparent; /* Lado derecho del triángulo */
+    border-top: 17.1vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+    margin-right: -5.4vw;
+}
+.triangle4 {
+    width: 0;
+    height: 0;
+    border-left: 2.72vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 2.72vw solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 8.54vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+    text-align: center;
+}
+.pcent_0{
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+    font-size: 1.5vh;
+}
+.pcent_1{
+    margin-left: 0vw;
+    margin-top: -1vh;
+    margin-bottom: 2.5vh;
+    font-size: 1.5vh;
+}
+.pcent_2{
+    margin-left: -1.5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-size: 1.5vh;
+}
+.pcent_3{
+    margin-left: -0.8vw;
+    margin-top: 10vh;
+    margin-bottom:5vh;
+    font-size: 1.5vh;
+}
+.pcent_4{
+    margin-left: -1.8vw;
+    margin-top:-15vh;
+    margin-bottom: -13vh;
+    font-size: 1.5vh;
+}
+.triangle5 {
+    width: 0;
+    height: 0;
+    border-left: 5.5vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 5.5vw solid transparent; /* Lado derecho del triángulo */
+    border-top: 17.1vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+    margin-left: -5.4vw;
+}
+.triangle6 {
+    width: 11.1vw;
+    height: 0;
+    border-left: 5.5vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 0vw solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 17.1vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+    margin-right: -5.5vw;
+}
+.triangle6 table{
+    margin-top: 4.5vh;
+    margin-right: 4vw;
+}
+.triangle7 {
+    width: 11.1vw;
+    height: 0;
+    border-left: 0vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 5.5vw solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 17.1vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+    margin-left: -5.5vw;
+}
+.triangle7 table{
+    margin-top: 6vh;
+    margin-left: 6vw;
+}
+.triangle8 {
+    width: 0;
+    height: 0;
+    border-left: 5.5vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 5.5vw solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 17.1vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+}
+.aux{
+  height: 8.5vh;
+}
+.trap1{
+    width: 0vw;
+    height: 0;
+    border-left: 5.5vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 5.5vw solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 17vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+    margin-right:-5.4vw;
+}
+.trap2{
+    width: 0vw;
+    height: 0;
+    border-left: 5.5vw solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 5.5vw solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 17vh solid rgb(127, 179, 131); /* Base del triángulo, ajusta este valor según sea necesario */
+}
+
+.row_triangle{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+.column_triangle{
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Opcional: para centrado vertical */
+  width: auto; /* Opcional: ajusta el ancho según tus necesidades */
+  height: auto; /* Opcional: ajusta la altura según tus necesidades */
+}
+  

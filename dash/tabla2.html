@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title id="titulo_ventana"></title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="table_css.css">
+</head>
+
+<body>
+  <div class="navbar"><b><h1 class="title" id="titulo_tabla"></h1></b></div>
+  <br>
+
+  <div class="row_0">
+
+    <div class="column">
+      <table class="sw_table">
+        <tr>
+          <td><img src="red_dot.png" class="red_dot" id="rd1"></td>
+          <td><p> Set Target</p></td>
+          <td><img src="red_dot.png" class="red_dot" id="rd2"></td>
+        </tr>
+        <tr>
+          <td>As Min.</td>
+          <td>
+            <form id="swform">
+              <button type="submit" id="swbtn">Switch</button>
+            </form>
+
+          </td>
+          <td>
+            As Max.
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="column">
+      <div class="container">
+        <div class="chart">
+          <canvas id="tabla2"></canvas>
+        </div>
+        <br>
+        
+        <form id="value_form">
+          <div class="row">
+            <div class="col-md-10 izquierda">
+              <label for="value">New Set of Values</label>
+              <input id="val1" name="value" class="campo_tabla" required>
+              <input id="val2" name="value" class="campo_tabla" required>
+              <input id="val3" name="value" class="campo_tabla" required>
+              <input id="val4" name="value" class="campo_tabla" required>
+              <input id="val5" name="value" class="campo_tabla" required>
+              <input id="val6" name="value" class="campo_tabla" required>
+              <input id="val7" name="value" class="campo_tabla" required>
+              <input id="val8" name="value" class="campo_tabla" required>
+              <input id="val9" name="value" class="campo_tabla" required>
+              <input id="val10" name="value" class="campo_tabla" required>
+              <input id="val11" name="value" class="campo_tabla" required>
+              <input id="val12" name="value" class="campo_tabla" required>  
+              <input id="val13" name="value" class="campo_tabla" required>            
+            </div>
+            <div class="col-md-2 derecha">
+              <button type="submit" id="submitVar">Send Values</button>
+            </div>
+          </div>
+          <br>
+        </form>
+    
+        <form id="target_form">
+          <div class="row">
+            <div class="col-md-10 izquierda">
+              <label for="target">New Set of Targets</label>
+              <input id="tar1" name="value" class="campo_tabla" required>
+              <input id="tar2" name="value" class="campo_tabla" required>
+              <input id="tar3" name="value" class="campo_tabla" required>
+              <input id="tar4" name="value" class="campo_tabla" required>
+              <input id="tar5" name="value" class="campo_tabla" required>
+              <input id="tar6" name="value" class="campo_tabla" required>
+              <input id="tar7" name="value" class="campo_tabla" required>
+              <input id="tar8" name="value" class="campo_tabla" required>
+              <input id="tar9" name="value" class="campo_tabla" required>
+              <input id="tar10" name="value" class="campo_tabla" required>
+              <input id="tar11" name="value" class="campo_tabla" required>
+              <input id="tar12" name="value" class="campo_tabla" required>
+              <input id="tar13" name="value" class="campo_tabla" required>
+            </div>
+            <div class="col-md-2 derecha">
+              <button type="submit" id="submitTar">Send Targets</button>
+            </div>
+          </div>
+          <br>
+        </form>
+
+        <form id="title_form">
+          <div class="row">
+            <div class="col-md-10 izquierda">
+              <label for="title">New Title For Chart</label>
+              <input id="tit" name="title" class="campo" required>
+            </div>
+            <div class="col-md-2 derecha">
+              <button type="submit" id="submitTitle">Submit</button>
+            </div>
+          </div>
+          <br>
+        </form>
+    
+        <div class="row">
+          <div class="col-md-8 izquierda">
+            <button class="button" id="value">
+              Edit Value
+            </button>
+            <button class="button" id="target">
+              Edit Target
+            </button>
+            <button class="button" id="title">
+              Edit Title
+            </button>
+          </div>
+          <div class="col-md-4 derecha">
+            <a href="/surf">
+              <button class="button" id="input">
+                Back
+              </button>
+            </a>
+          </div>
+        </div>
+        <br>  
+      </div>
+    </div>
+  </div>
+
+  <script src="funciones.js"></script>
+  <script src="tabla.js"></script>
+  <script>
+    const valor=2;
+    inicio(valor);
+  </script>
+  
+</body>
+</html>

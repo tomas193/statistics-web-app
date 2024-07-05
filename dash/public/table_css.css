@@ -1,0 +1,199 @@
+body{
+    background-color: lightslategray;
+  }
+  .button {
+  background-color: black; 
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  height: auto;
+  width: auto;
+  }
+  .button:hover {opacity: 1}
+
+  .container {
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px; /* Añade un poco de espacio interior para no tocar directamente los bordes de los elementos internos */
+  }
+  .contenedor {
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 90%;
+    padding: 10px; /* Añade un poco de espacio interior para no tocar directamente los bordes de los elementos internos */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: auto;
+  }
+  .columna{
+    flex: 1;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 89%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .columna_titulo{
+      display: flex; /* Habilita Flexbox */
+      flex-direction: column; /* Alinea los elementos verticalmente */
+      justify-content: center; /* Centra los elementos verticalmente */
+      align-items: center; /* Centra los elementos horizontalmente */
+      flex: 1;
+      margin: 10px;
+      width: auto;
+      height: auto; /* Considera especificar una altura si los elementos no se centran como esperas */
+      text-align: center;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 83%;
+  }
+  .tabla_form{
+    width: 110%;
+  }
+  .tabla_form tr{
+    text-align: center;
+    justify-content: center;
+  }
+  .tabla_form td{
+    justify-content: center;
+    text-align: center;
+  }
+  .main_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente si también se desea */
+    height: 84vh; /* Asegura que el contenedor padre tenga altura */
+    margin: 0; /* Elimina los márgenes por defecto */
+  }
+#s1{
+  background-color: rgb(160, 190, 216);
+}
+#s2{
+  background-color: rgb(236, 173, 113);
+}
+#s3{
+  background-color: rgb(94, 124, 150);
+}
+#s4{
+  background-color: rgb(225, 141, 228);
+}
+#s5{
+  background-color: rgb(236, 92, 200);
+}
+#s6{
+  background-color: rgb(139, 139, 139);
+}
+#s7{
+  background-color: rgb(107, 167, 102);
+}
+.izq{
+  text-align: left;
+}
+.derecha{
+  text-align: right;
+}
+  .centrado {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: left; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-align: center; /* Centra el texto horizontalmente */
+  }
+  .derecha{
+  display: flex;
+  justify-content: right; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  text-align: center; /* Centra el texto horizontalmente */
+  }
+  .chart{
+    background-color: white;
+    border-radius: 10px;
+  }
+  .navbar{
+    background-color: black;
+    justify-content: center;
+  }
+  .campo{
+    width: 45%;
+  }
+  .campo_tabla{
+    width: 5%;
+  }
+  .campo_target{
+    width: 7%;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .red_dot{
+    height: 15px;
+    width: 15px;
+  }
+  .sw_table td{
+    text-align: center;
+    vertical-align: middle;
+  }
+  .title{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-size: 40px;
+  }
+.months_table td{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 2.75vw;
+  font-size:1.53vh;
+}
+.row_triangle{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+.column_triangle{
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Opcional: para centrado vertical */
+  width: auto; /* Opcional: ajusta el ancho según tus necesidades */
+  height: auto; /* Opcional: ajusta la altura según tus necesidades */
+  background-color: aliceblue;
+}
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(160, 160, 207);
+  border-radius: 50%; /* para hacerlo circular */
+  text-align: center;
+  justify-content: center;
+}
+.triangle1{
+    width: 0px;
+    height: 0px;
+    border-left: 400px solid transparent; /* Lado izquierdo del triángulo */
+    border-right: 400px solid transparent; /* Lado derecho del triángulo */
+    border-bottom: 550px solid rgb(255, 208, 0); /* Base del triángulo, ajusta este valor según sea necesario */
+    background-color: beige;
+  }
+
+

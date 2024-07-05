@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+		<div class="navbar">
+			<div class="row">
+				<div id="nav"><a class="navtext" href="/">Home</a></div>
+				<div id="nav"><a class="navtext" href="/about">About</a></div>
+				<h1 class="titulo">Quality</h1>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div class="wrapper">	
+			<br>
+			<div class="content">
+				<div class="row">
+					<div class="columna">
+						<h3>Plan</h3>
+					</div>
+					<div class="columna">
+						<h3>Do</h3>
+					</div>
+					<div class="columna">
+						<h3>Check</h3>
+					</div>
+                    <div class="columna">
+						<h3>Act</h3>
+					</div>
+				</div>
+
+                <div class="row" id="titlediv">
+					<div class="column" id="dashcol">
+						<img class="pic" src="qty/1.jpg" id="1">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="1" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+
+					<div class="column" id="dashcol">
+						<img class="pic" src="qty/2.jpg" id="2">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="2" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+
+					<div class="column" id="dashcol">
+						<div class="graf">
+							<canvas id="tabla21"></canvas>
+							</div>
+							<br>
+							<a href="/tabla21">
+								<img src="lupa.png" class="lupa">
+							</a>
+					</div>
+
+                    <div class="column" id="dashcol">
+						<img class="pic" src="qty/3.jpg" id="3">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="3" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column" id="dashcol">
+						<img class="pic" src="qty/4.jpg" id="4">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="4" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+
+					<div class="column" id="dashcol">
+						<img class="pic" src="qty/5.jpg" id="5">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="5" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+
+					<div class="column" id="dashcol">
+						<div class="graf">
+							<canvas id="tabla22"></canvas>
+							</div>
+							<br>
+							<a href="/tabla22">
+								<img src="lupa.png" class="lupa">
+							</a>
+					</div>
+
+                    <div class="column" id="dashcol">
+						<img class="pic" src="qty/6.jpg" id="6">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="6" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column" id="dashcol">
+						<img class="pic" src="qty/7.jpg" id="7">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="7" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+
+					<div class="column" id="dashcol">
+						<img class="pic" src="qty/8.jpg" id="8">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="8" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+
+					<div class="column" id="dashcol">
+						<div class="graf">
+							<canvas id="tabla23"></canvas>
+							</div>
+							<br>
+							<a href="/tabla23">
+								<img src="lupa.png" class="lupa">
+							</a>
+					</div>
+
+                    <div class="column" id="dashcol">
+						<img class="pic" src="qty/9.jpg" id="9">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="9" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column" id="dashcol">
+						<img class="pic" src="qty/10.jpg" id="10">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="10" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+
+					<div class="column" id="dashcol">
+						<img class="pic" src="qty/11.jpg" id="11">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="11" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+
+					<div class="column" id="dashcol">
+						<div class="graf">
+							<canvas id="tabla24"></canvas>
+							</div>
+							<br>
+							<a href="/tabla24">
+								<img src="lupa.png" class="lupa">
+							</a>
+					</div>
+
+                    <div class="column" id="dashcol">
+						<img class="pic" src="qty/12.jpg" id="12">
+						<br><br>
+						<form action="/qty" method="post" enctype="multipart/form-data">
+							<input type="file" name="12" required>
+							<button type="submit">Upload</button>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<script src="tabla.js"></script>
+	<script>
+	for (let i = 1; i <= 12; i++) {
+		document.getElementById(i.toString()).addEventListener('click', function () {
+			this.classList.toggle('xpanded');
+		});
+	}
+
+	for (let i = 21; i <= 24; i++) {
+		inicio(i);
+	}
+	</script>
+
+</body>
+</html>

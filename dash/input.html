@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>KPI's Input</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="table_css.css">
+</head>
+
+<body>
+  <div class="navbar"><h1 class="title"><b>KPI's Input</b></h1></div>
+  <br>
+      <div class="main_content">
+        <div class="contenedor">
+          <form id="input_values">
+            <div class="row">
+              <div class="columna_titulo"><H5>PEOPLE</H5></div>
+              <div class="columna_titulo"><H5>CUSTOMER</H5></div>
+              <div class="columna_titulo"><H5>COST</H5></div>
+              <div class="columna_titulo"><H5>PROCESS</H5></div>
+              <div class="columna_titulo"><H5>FLOW</H5></div>
+              <div class="columna_titulo"><H5>LABOR AND EQUIPMENT EFFICIENCY</H5></div>
+              <div class="columna_titulo"><H5>ENVIRONMENT</H5></div>
+            </div>
+  
+            <div class="row">
+              <div class="columna" id="s1"><br>
+                <table class="table_form">
+                  <tr>
+                    <td><label for="target">Accidents</label></td>
+                    <td><input id="par1" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Renuncias</label></td>
+                    <td><input id="par2" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Absenteeism (%)</label></td>
+                    <td><input id="par3" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Turnover (%)</label></td>
+                    <td><input id="par4" name="value" class="campo" required></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="columna" id="s2"><br>
+                <table class="table_form">
+                  <tr>
+                    <td><label for="target">Volume</label></td>
+                    <td><input id="par5" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Service D+2</label></td>
+                    <td><input id="par6" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Total Lab Service</label></td>
+                    <td><input id="par7" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Old Jobs</label></td>
+                    <td><input id="par8" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Mail Out</label></td>
+                    <td><input id="par9" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">InterLabs Rejects (DVI)</label></td>
+                    <td><input id="par10" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">InterLabs Rejects (Optifacts)</label></td>
+                    <td><input id="par11" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">InterLabs Rejects (Total)</label></td>
+                    <td><input id="par12" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Total Missing Lenses</label></td>
+                    <td><input id="par13" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Dias Calendario</label></td>
+                    <td><input id="par14" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Dias Trabajados</label></td>
+                    <td><input id="par15" name="value" class="campo" required></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="columna" id="s3"><br>
+                <table class="tabla_form">
+                  <tr>
+                    <td><label for="target">Surfacing Cost + Support</label></td>
+                    <td><input id="par16" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Surfacing Volume</label></td>
+                    <td><input id="par17" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Costo HC + Spin</label></td>
+                    <td><input id="par18" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">HC</label></td>
+                    <td><input id="par19" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Costo AR</label></td>
+                    <td><input id="par20" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">AR Volume</label></td>
+                    <td><input id="par21" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Finishing Volume</label></td>
+                    <td><input id="par22" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Finishing Cost</label></td>
+                    <td><input id="par23" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">HMC BKG LENSES QTY</label></td>
+                    <td><input id="par24" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">#Lentes embarcados</label></td>
+                    <td><input id="par25" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">#Lentes embarcados Finishing</label></td>
+                    <td><input id="par26" name="value" class="campo" required></td>
+                  </tr>
+                </table>
+              </div>
+  
+              <div class="columna" id="s4"><br>
+                <table class="tabla_form">
+                  <tr>
+                    <td><label for="target">Breakage EM QTY</label></td>
+                    <td><input id="par27" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Optics: %NC Full ANSI QTY</label></td>
+                    <td><input id="par28" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Gross Surfacing Lentes</label></td>
+                   <td><input id="par29" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">#Lentes Rework Surfacing</label></td>
+                    <td><input id="par30" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">#Lenses Breakage Surfacing</label></td>
+                    <td><input id="par31" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">#Lenses ReworK HC</label></td>
+                    <td><input id="par32" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                  <td><label for="target">#Lenses in HC (Producidos)</label></td>
+                  <td><input id="par33" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target"># Lenses Bkg AR</label></td>
+                    <td><input id="par34" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">#Lenses AR Producidos</label></td>
+                    <td><input id="par35" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Lentes Producidos Finishing</label></td>
+                    <td><input id="par36" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Lentes Rework Finishing</label></td>
+                    <td><input id="par37" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Lentes Breakage Finishing</label></td>
+                    <td><input id="par38" name="value" class="campo" required></td>
+                  </tr>
+                </table>
+              </div>
+  
+              <div class="columna" id="s5"><br>
+                <table class="table_form">
+                  <tr>
+                    <td><label for="target">Lead Time Hrs (95%)</label></td>
+                    <td><input id="par39" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">WIP (Days above Target)</label></td>
+                    <td><input id="par40" name="value" class="campo" required></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="columna" id="s6"><br>
+                <table class="tabla_form">
+                  <tr>
+                    <td><label for="target">Surfacing Net Lenses</label></td>
+                    <td><input id="par41" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">HC Net Lenses</label></td>
+                    <td><input id="par42" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">AR Net Lenses</label></td>
+                    <td><input id="par43" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">FI Net Leses</label></td>
+                    <td><input id="par44" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Surfacing Direct Labor Hours</label></td>
+                    <td><input id="par45" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">HC Direct Labor Hours</label></td>
+                    <td><input id="par46" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">AR Direct Labor Hours</label></td>
+                    <td><input id="par47" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">FI Direct Labor Hours</label></td>
+                    <td><input id="par48" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Avg # Sets/AR machine/day</label></td>
+                    <td><input id="par49" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Avg # lenses/set/ AR machine</label></td>
+                    <td><input id="par50" name="value" class="campo" required></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="columna" id="s7"><br>
+                <table class="tabla_form">
+                  <tr>
+                    <td><label for="target">Consumo kWH</label></td>
+                    <td><input id="par51" name="value" class="campo" required></td>
+                  </tr>
+                  <tr>
+                    <td><label for="target">Consumo L</label></td>
+                    <td><input id="par52" name="value" class="campo" required></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="columna">
+                <label for="planta">Business Center</label>
+                <select name="plantas" id="planta">
+                  <option value="1">ETO</option>
+                  <option value="2">ELM</option>
+                  <option value="3">ECO I</option>
+                  <option value="4">ECO II</option>
+                </select>
+              </div>
+              <div class="columna">    
+                <label for="month">Select Month</label>
+                <select name="months" id="month">
+                  <option value="0" id="past"></option>
+                  <option value="1">January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div>
+              <div class="columna"></div>
+              <div class="columna"></div>
+              <div class="columna"></div>
+              <div class="columna">
+                <button type="submit" id="submitInput">Submit</button>
+              </div>
+              <div class="columna">
+                <a href="/about">Back</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+  <script src="funciones.js"></script>
+  <script src="tabla.js"></script>
+  <script src="input.js"></script>
+  
+</body>
+</html>

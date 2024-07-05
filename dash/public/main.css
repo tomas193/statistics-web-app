@@ -1,0 +1,94 @@
+body{
+    background-color: lightslategray;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#titulo{
+    text-align: center;
+    color: white;
+}
+#div1{
+    background-color: beige;
+}
+
+.content {
+    padding:  5px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.subcontent1{
+    background-color: black;
+    height: 500px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    font-size: 70%;
+    width: auto;
+    height: auto;
+}
+#dashcol{
+    flex: 1;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    background-color: rgb(4, 140, 194);
+
+}
+.columna{
+    flex: 1;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+}
+.navbar{
+    background-color: black;
+    text-align: center;
+    border-radius: 10px;
+}
+#nav{
+    margin-top: 25px;
+    text-align: center;
+}
+.navtext{
+    color: white;
+    align-self: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+}
+.pic{
+    width: 20vw;
+    height: 25vh;
+    border-radius: 6px;
+}
+.xpanded{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 90% !important;
+height: 90% !important;
+z-index: 1000; /*para asegurarse que está encima de otros elementos*/
+border: 3px solid white;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*efecto de sombra*/
+border-radius: 20px;
+}
+.titulo{
+margin-left: 7vw;
+color: white;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 300%;
+}
+.lupa{
+width: 30px;
+height: 30px;
+}
+.graf{
+background-color: white;
+border-radius: 5px;
+}

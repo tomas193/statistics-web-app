@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboards</title>
+    <style>
+
+		body{
+			background-color:lightslategrey;
+			/*background-image: url(/essilor1.jpg);*/
+			background-size: auto;
+    		background-repeat: no-repeat;
+		}
+		#titulo{
+			text-align: center;
+			color: white;
+		}
+		#div1{
+			background-color: beige;
+		}
+		.row{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#left-nav{
+			height: 500px;
+			width: 600px;
+		}
+
+		.sidebar {
+            height: 100%;
+            width: auto;
+            top: 0;
+            left: 0;
+			position: fixed;
+            background-color:white;
+            overflow-x: hidden;
+            padding-top: 5px;
+			
+        }
+
+        .sidebar a {
+            padding: 15px 15px;
+            text-decoration: none;
+            font-size: 20px;
+			font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: lightblue;
+        }
+
+        /* Estilos para el contenido principal */
+		.content {
+            margin-left: 245px;
+            padding: 10px 10px;
+
+        }
+		.subcontent1{
+			background-color: black;
+			height: 500px;
+		}
+		.row{
+			display: flex;
+			/*justify-content: space-between;*/
+			font-size: large;
+			margin-left: 10px;
+		}
+		.column{
+			flex: 1;
+			padding: 30px;
+			margin: 65px;
+			text-align: center;
+			background-color: white;
+			border-radius: 10px;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		.navbar{
+			background-color: black;
+			height: 80px;
+			width: auto;
+		}
+		#imgcont{
+			margin-left: 400px;
+			background-color: black;
+			height: 70px;
+		}
+		.row1{
+			background-color: black;
+			height: 87px;
+			width: auto;
+			right: 0;
+			display: flex;
+			justify-content: space-between;
+			margin-left: 190px;
+		}
+        .profile{
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+        }
+		.xpanded{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50% !important;
+        height: 50% !important;
+        z-index: 1000; /*para asegurarse que está encima de otros elementos*/
+        border: 3px solid white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /*efecto de sombra*/
+		border-radius: 20px;
+    }
+    </style>
+</head>
+
+<body>
+	<div id="navcont">
+		<div class="navbar">
+			<div class="row1">
+				<div></div>
+				
+				<div></div>
+			</div>
+		</div>
+	</div>
+    <div class="container">
+		<div class="wrapper">
+			<div class="sidebar">
+				<img src="essilor2.jpg" width="200px" height="100px">
+				<br><br>
+				<a href="/">Home</a>
+				<a href="/about">About</a>
+				<a href="#contacto">Contacto</a>
+			</div>
+	
+			<div class="content">
+				<br><br><br><br>
+
+				<div class="row">
+					<div class="column">
+						<img class="profile" src="profiles/1.jpg" id="1">
+						<br><br>
+
+						<form action="/set" method="post" enctype="multipart/form-data">
+							<input type="file" name="1" required>
+							<button type="submit">Upload</button>
+						</form>
+                        <br>
+                        <form action="procesar.php" method="post">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" value="" /><br>
+                            <label for="correo">Correo:</label>
+                            <input type="text" name="correo" id="correo" value="" /><br>
+                            <label for="telefono">Telefono:</label>
+                            <input type="text" name="telefono" id="telefono" value="" /><br>
+                            <br><br>
+                            <input type="submit" value="Enviar" />
+                        </form>
+                    </div>
+
+					<div class="column">
+                        <img class="profile" src="profiles/2.jpg" id="2">
+						<br><br>
+
+						<form action="/set" method="post" enctype="multipart/form-data">
+							<input type="file" name="2" required>
+							<button type="submit">Upload</button>
+						</form>
+                        <br>
+                        <form action="procesar.php" method="post">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" value="" /><br>
+                            <label for="correo">Correo:</label>
+                            <input type="text" name="correo" id="correo" value="" /><br>
+                            <label for="telefono">Telefono:</label>
+                            <input type="text" name="telefono" id="telefono" value="" /><br>
+                            <br><br>
+                            <input type="submit" value="Enviar" />
+                        </form>
+					</div>
+					<div class="column">
+                        <img class="profile" src="profiles/3.jpg" id="3">
+						<br><br>
+
+						<form action="/set" method="post" enctype="multipart/form-data">
+							<input type="file" name="3" required>
+							<button type="submit">Upload</button>
+						</form>
+                        <br>
+                        <form action="procesar.php" method="post">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" value="" /><br>
+                            <label for="correo">Correo:</label>
+                            <input type="text" name="correo" id="correo" value="" /><br>
+                            <label for="telefono">Telefono:</label>
+                            <input type="text" name="telefono" id="telefono" value="" /><br>
+                            <br><br>
+                            <input type="submit" value="Enviar" />
+                        </form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+                        <img class="profile" src="profiles/4.jpg" id="4">
+						<br><br>
+
+						<form action="/set" method="post" enctype="multipart/form-data">
+							<input type="file" name="4" required>
+							<button type="submit">Upload</button>
+						</form>
+                        <br>
+                        <form action="procesar.php" method="post">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" value="" /><br>
+                            <label for="correo">Correo:</label>
+                            <input type="text" name="correo" id="correo" value="" /><br>
+                            <label for="telefono">Telefono:</label>
+                            <input type="text" name="telefono" id="telefono" value="" /><br>
+                            <br><br>
+                            <input type="submit" value="Enviar" />
+                        </form>
+					</div>
+					<div class="column">
+                        <img class="profile" src="profiles/5.jpg" id="5">
+						<br><br>
+
+						<form action="/set" method="post" enctype="multipart/form-data">
+							<input type="file" name="5" required>
+							<button type="submit">Upload</button>
+						</form>
+                        <br>
+                        <form action="procesar.php" method="post">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" value="" /><br>
+                            <label for="correo">Correo:</label>
+                            <input type="text" name="correo" id="correo" value="" /><br>
+                            <label for="telefono">Telefono:</label>
+                            <input type="text" name="telefono" id="telefono" value="" /><br>
+                            <br><br>
+                            <input type="submit" value="Enviar" />
+                        </form>
+					</div>
+					<div class="column">
+                        <img class="profile" src="profiles/6.jpg" id="6">
+						<br><br>
+
+						<form action="/set" method="post" enctype="multipart/form-data">
+							<input type="file" name="6" required>
+							<button type="submit">Upload</button>
+						</form>
+                        <br>
+                        <form action="procesar.php" method="post">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" value="" /><br>
+                            <label for="correo">Correo:</label>
+                            <input type="text" name="correo" id="correo" value="" /><br>
+                            <label for="telefono">Telefono:</label>
+                            <input type="text" name="telefono" id="telefono" value="" /><br>
+                            <br><br>
+                            <input type="submit" value="Enviar" />
+                        </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+for (let i = 1; i <= 6; i++) {
+    document.getElementById(i.toString()).addEventListener('click', function () {
+        this.classList.toggle('xpanded');
+    });
+}
+	</script>
+</body>
+</html>

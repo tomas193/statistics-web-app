@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="row">
+			<div class="column" id="home">
+				<a href="/"><h3>Home</h3></a>
+			</div>
+			<div class="column"><h1 class="title"><b>Essilor Luxottica Statistics & Analytics</b></h1></div>
+			<div class="column">IWS 5.0 ready site</div>
+		</div>
+	</div>
+	<br><br><br>
+    <div class="main_container">
+    	<div class="contenedor">
+			<div class="content1">
+				<div class="row">
+					<div class="column">
+						<h3 id="oth_title1"></h3>
+						<h3 id="site_level">Site Level</h3>
+					</div>
+					<div class="column">
+						<h3 id="oth_title2"></h3>
+						<h3 id="itself_title">Site vs NSL</h3>
+					</div>
+					<div class="column"><h3>Neashore Labs</h3></div>
+				</div>
+			</div>
+			<div class="content2">
+					<div class="row">
+					
+					<div class="column">
+						<div id="triangle" class="triangle1">
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="triangle8" id="t1">
+									<div class="row_triangle">
+										<div class="aux">
+											<table class="pcent_0">
+												<tr>
+													<td><h3 id="_customer">Customer</h3><h3 id="t_1"></h3></td>
+												</tr>
+												<tr>
+													<td></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="trap1" id="t4">
+									<table class="pcent_2">
+										<tr>
+											<td><h3 id="_cost">Cost</h3><h3 id="t_2"></h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle3" id="t2">
+									<table class="pcent_4">
+										<tr>
+											<td><h3 id="_process">Process</h3><h3 id="t_3"></h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="trap2" id="t5">
+									<table class="pcent_2">
+										<tr>
+											<td><h3 id="_flow">Flow</h3><h3 id="t_4"></h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							</div>
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="triangle6" id="t6">
+									<table class="pcent_1">
+										<tr>
+											<td><h3 id="_labor">Labor and Equipment Efficiency</h3><h3 id="t_5"></h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle2" id="t8">
+									<table class="pcent_3">
+										<tr>
+											<td><h3 id="_people">People</h3><h3 id="t_0"></h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle7" id="t10">
+									<table class="pcent_1">
+										<tr>
+											<td><h3 id="_environment">Environment</h3><h3 id="t_6"></h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							</div>
+						  </div>
+					</div>
+
+					<div class="column">
+						<div id="triangle" class="triangle1">
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="triangle8" id="t11">
+									<div class="row_triangle">
+										<div class="aux">
+											<table class="pcent_0">
+												<tr>
+													<td><h3>Customer</h3></td>
+												</tr>
+												<tr>
+													<td><a href="/"><p></p></a></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="trap1" id="t14">
+									<table class="pcent_2">
+										<tr>
+											<td><h3>Cost</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle3" id="t3">
+									<table class="pcent_4">
+										<tr>
+											<td><h3>Process</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="trap2" id="t15">
+									<table class="pcent_2">
+										<tr>
+											<td><h3>Flow</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							</div>
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="triangle6" id="t16">
+									<table class="pcent_1">
+										<tr>
+											<td><h3>Labor and Equipment Efficiency</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle2" id="t18">
+									<table class="pcent_3">
+										<tr>
+											<td><h3>People</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle7" id="t20">
+									<table class="pcent_1">
+										<tr>
+											<td><h3>Environment</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							</div>
+						  </div>
+					</div>
+					<div class="column">
+						<div id="triangle" class="triangle1">
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="triangle8" id="t21">
+									<div class="row_triangle">
+										<div class="aux">
+											<table class="pcent_0">
+												<tr>
+													<td><h3>Customer</h3></td>
+												</tr>
+												<tr>
+													<td></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							  </div>
+							</div>
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="trap1" id="t24">
+									<table class="pcent_2">
+										<tr>
+											<td><h3>Cost</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle3" id="t17">
+									<table class="pcent_4">
+										<tr>
+											<td><h3>Process</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="trap2" id="t25">
+									<table class="pcent_2">
+										<tr>
+											<td><h3>Flow</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							</div>
+							<div class="row_triangle">
+							  <div class="column_triangle">
+								<div class="triangle6" id="t26">
+									<table class="pcent_1">
+										<tr>
+											<td><h3>Labor and Equipment Efficiency</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle2" id="t28">
+									<table class="pcent_3">
+										<tr>
+											<td><h3>People</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							  <div class="column_triangle">
+								<div class="triangle7" id="t30">
+									<table class="pcent_1">
+										<tr>
+											<td><h3>Environment</h3></td>
+										</tr>
+										<tr>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							  </div>
+							</div>
+						  </div>
+					</div>
+				</div>
+			</div>
+			<div class="content4">
+				<div class="row">
+					<div class="column">
+		                <label for="planta1">Business Center-</label>
+		                <select name="plantas" id="planta1">
+		                  <option value="1">ETO</option>
+		                  <option value="2">ELM</option>
+		                  <option value="3">ECO I</option>
+		                  <option value="4">ECO II</option>
+		                </select>
+					</div>
+					<div class="column">
+		                <label for="planta2" id="planta2_label">Business Center-</label>
+		                <select name="plantas" id="planta2">
+		                  <option value="1">ETO</option>
+		                  <option value="2" selected>ELM</option>
+		                  <option value="3">ECO I</option>
+		                  <option value="4">ECO II</option>
+		                </select>
+					</div>
+					<div class="column">
+						<label for="analysis_selection">Compare With-</label>
+		                <select name="plantas" id="analysis_selection">
+		                  <option value="1" id="itself">Itself</option>
+		                  <option value="2" id="otherbc">Other Business Center</option>
+		                </select>
+					</div>
+				</div>
+			</div>
+			<div class="content3">
+				<div class="row">
+					<div class="column">
+						<a href="/input">
+							<button>KPI's Input</button>
+						</a>
+					</div>
+					<div class="column">
+						<a href="/target">
+							<button>KPI's Target</button>
+						</a>
+					</div>
+					<div class="column">
+
+		             	<label for="date1">From-</label>
+		                <select name="plantas" id="date1">
+		                  <option value="0" id="past1"></option>
+		                  <option value="1">January</option>
+		                  <option value="2">February</option>
+		                  <option value="3">March</option>
+		                  <option value="4">April</option>
+		                  <option value="5">May</option>
+		                  <option value="6">June</option>
+		                  <option value="7">July</option>
+		                  <option value="8">August</option>
+		                  <option value="9">September</option>
+		                  <option value="10">October</option>
+		                  <option value="11">November</option>
+		                  <option value="12">December</option>
+		                  <option value="13" id="actual1"></option>
+		                </select>
+		                <label for="date2">-To-</label>
+		                <select name="plantas" id="date2">
+		                  <option value="0" id="past2"></option>
+		                  <option value="1">January</option>
+		                  <option value="2">February</option>
+		                  <option value="3">March</option>
+		                  <option value="4">April</option>
+		                  <option value="5">May</option>
+		                  <option value="6">June</option>
+		                  <option value="7">July</option>
+		                  <option value="8">August</option>
+		                  <option value="9">September</option>
+		                  <option value="10">October</option>
+		                  <option value="11">November</option>
+		                  <option value="12">December</option>
+		                  <option value="13" id="actual2"></option>
+		                </select>
+					</div>
+				</div>
+			</div>
+    	</div>
+	   	<div class="contenedor2">
+	  <br>
+	   	<button id="hide">Hide</button>
+		   	<h1 id="people1">People<br></h1>
+	   		<div class="row" id="people">
+	   			<div class="column1">
+					<h3>Accidents</h3>
+					<div class="graf">
+						<canvas id="tabla1"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Turnover (%)</h3>
+					<div class="graf">
+						<canvas id="tabla2"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Absenteeism (%)</h3>
+					<div class="graf">
+						<canvas id="tabla3"></canvas>
+					</div>
+				</div>
+	   		</div>
+		   	<h1 id="customer3">Customer<br></h1>
+	   		<div class="row" id="customer1">
+	   			<div class="column1">
+					<h3>Volume</h3>
+					<div class="graf">
+						<canvas id="tabla4"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Service D+2</h3>
+					<div class="graf">
+						<canvas id="tabla5"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Total Lab Service</h3>
+					<div class="graf">
+						<canvas id="tabla6"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Tail D+5</h3>
+					<div class="graf">
+						<canvas id="tabla7"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="customer2">
+				<div class="column1">
+					<h3>InterLabs Rejects (DVI)</h3>
+					<div class="graf">
+						<canvas id="tabla8"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>InterLabs Rejects (Optifacts)</h3>
+					<div class="graf">
+						<canvas id="tabla9"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>InterLabs Rejects (Total)</h3>
+					<div class="graf">
+						<canvas id="tabla10"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Short Orders</h3>
+					<div class="graf">
+						<canvas id="tabla11"></canvas>
+					</div>
+				</div>
+	   		</div>
+
+		   	<h1 id="cost1">Cost<br></h1>
+	   		<div class="row" id="cost">
+	   			<div class="column1">
+					<h3>Manufacturing Unit Cost (USD)</h3>
+					<div class="graf">
+						<canvas id="tabla12"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Unit Cost Finishing (USD)</h3>
+					<div class="graf">
+						<canvas id="tabla13"></canvas>
+					</div>
+				</div>
+	   		</div>
+
+		   	<h1 id="process3">Process<br></h1>
+	   		<div class="row" id="process1">
+	   			<div class="column1">
+					<h3>Breakage HMC</h3>
+					<div class="graf">
+						<canvas id="tabla14"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Breakage E&M</h3>
+					<div class="graf">
+						<canvas id="tabla15"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Optics: %NC Full ANSI</h3>
+					<div class="graf">
+						<canvas id="tabla16"></canvas>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="process2">
+				<div class="column1">
+					<h3>First Pass Yield Surfacing</h3>
+					<div class="graf">
+						<canvas id="tabla17"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>First Pass Yield HC</h3>
+					<div class="graf">
+						<canvas id="tabla18"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>First Pass Yield AR</h3>
+					<div class="graf">
+						<canvas id="tabla19"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>First Pass Yield Finishing</h3>
+					<div class="graf">
+						<canvas id="tabla20"></canvas>
+					</div>
+				</div>
+	   		</div>
+
+		   	<h1 id="flow1">Flow<br></h1>
+	   		<div class="row" id="flow">
+	   			<div class="column1">
+					<h3>Lead Time Hrs (95%)</h3>
+					<div class="graf">
+						<canvas id="tabla21"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>WIP (Days above Target)</h3>
+					<div class="graf">
+						<canvas id="tabla22"></canvas>
+					</div>
+				</div>
+	   		</div>
+
+		   	<h1 id="labor1">Labor and Equipment Efficiency<br></h1>
+	   		<div class="row" id="labor">
+	   			<div class="column1">
+					<h3>NLH's</h3>
+					<div class="graf">
+						<canvas id="tabla23"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Avg # Sets/AR machine/day</h3>
+					<div class="graf">
+						<canvas id="tabla24"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Avg # lenses/set/ AR machine</h3>
+					<div class="graf">
+						<canvas id="tabla25"></canvas>
+					</div>
+				</div>
+	   		</div>
+
+		   	<h1 id="environment1">Environment<br></h1>
+	   		<div class="row" id="environment">
+	   			<div class="column1">
+					<h3>Energy (KWH/lens)</h3>
+					<div class="graf">
+						<canvas id="tabla26"></canvas>
+					</div>
+				</div>
+				<div class="column1">
+					<h3>Water (L/lens)</h3>
+					<div class="graf">
+						<canvas id="tabla27"></canvas>
+					</div>
+				</div>
+	   		</div>
+		</div>
+	</div>
+
+<script src="stats.js"></script>
+  <script src="tabla_kpis.js"></script>
+  <script>
+  	let flags=[0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,1,1,1,0,0];
+    for(let i=1;i<28;i++){
+    	inicio(i,flags[i-1]);
+    }
+  </script>
+</body>
+</html>
