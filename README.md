@@ -20,7 +20,7 @@ In case of error delete the node_modules file and run on the terminal:
    ```sh
    npm install express
    npm install multer
-   npm install sqlite3
+   npm install sqlite3```
 
 ## Prerequisites
 NodeJS installed
