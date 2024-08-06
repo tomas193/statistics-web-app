@@ -26,6 +26,9 @@ This application was developed for a company with specific needs.
 
 ## Getting Started
 NodeJS installed
+
 Express module installed
+
 Multer module installed
+
 SQLite3 module installed
