@@ -19,9 +19,7 @@ data in a graph way, where a date range can be selected.
 4. In case of error delete the node_modules file and run on the terminal:
    ```sh
    npm install express
-   ```sh
    npm install multer
-   ```sh
    npm install sqlite3
 
 ## Getting Started
