@@ -28,4 +28,4 @@ This application was developed for a company with specific needs.
 NodeJS installed
 Express module installed
 Multer module installed
-SQLite3 moduel installed
+SQLite3 module installed
