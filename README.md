@@ -24,7 +24,7 @@ This application was developed for a company with specific needs.
    npm install multer
    npm install sqlite3
 
-## Getting Started
+## Prerequisites
 NodeJS installed
 
 Express module installed
