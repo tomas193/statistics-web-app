@@ -5,7 +5,7 @@ This repository contains a Statistics Web Application developed in JavaScript an
 On the other hand, the application host and statistics & analytics module where the user enter kpi's inputs and targets; with the input data and targets, the application performs specific calculations and return visible
 data in a graph way, where a date range can be selected.
 
-This application was developed for a company with specific needs.
+This application was developed for a company with specific needs. The pictures that the project contains have fake data, no sensible information is exposed.
 
 ## Getting Started
 1. Clone the repository:
